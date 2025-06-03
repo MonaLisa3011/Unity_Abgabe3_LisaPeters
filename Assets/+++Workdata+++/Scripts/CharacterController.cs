@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class CharacterControllerSide : MonoBehaviour
 {
     private float direction = 0f;
-    [SerializeField] private float speed = 2f;
-    [SerializeField] private float jumpforce = 10f;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float jumpforce = 7f;
 
 
     private Rigidbody2D rb;
