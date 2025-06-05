@@ -14,6 +14,8 @@ public class CharacterControllerSide : MonoBehaviour
     private Transform transformGroundCheck;
 
     [SerializeField] private LayerMask layerGround;
+    
+    [SerializeField] GameObject VerlorenPanel;
 
 
     private bool canMove = true;
@@ -24,6 +26,8 @@ public class CharacterControllerSide : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         canMove = true;
+        
+        VerlorenPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,7 +60,21 @@ public class CharacterControllerSide : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(transformGroundCheck.position, 0.3f, layerGround))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,jumpforce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpforce);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+        }
+
+        else if (other.CompareTag("Feind"))
+        {
+            VerlorenPanel.SetActive(true);
+            canMove = false;
         }
     }
 }
