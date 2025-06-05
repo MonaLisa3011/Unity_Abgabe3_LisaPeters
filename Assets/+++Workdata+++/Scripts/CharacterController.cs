@@ -19,6 +19,7 @@ public class CharacterControllerSide : MonoBehaviour
     [SerializeField] private LayerMask layerGround;
     
     [SerializeField] GameObject VerlorenPanel;
+    [SerializeField] GameObject GewonnenPanel;
 
     [SerializeField] private TextMeshProUGUI textCoinCount;
 
@@ -34,6 +35,7 @@ public class CharacterControllerSide : MonoBehaviour
         canMove = true;
         
         VerlorenPanel.SetActive(false);
+        GewonnenPanel.SetActive(false);
     }
 
     
@@ -83,6 +85,12 @@ public class CharacterControllerSide : MonoBehaviour
         else if (other.CompareTag("Feind"))
         {
             VerlorenPanel.SetActive(true);
+            canMove = false;
+        }
+        
+        else if (other.CompareTag("Scheune"))
+        {
+            GewonnenPanel.SetActive(true);
             canMove = false;
         }
     }

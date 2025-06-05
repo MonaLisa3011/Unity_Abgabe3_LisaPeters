@@ -8,6 +8,7 @@ TagManager:
   - coin
   - Feind
   - Text
+  - Scheune
   layers:
   - Default
   - TransparentFX
