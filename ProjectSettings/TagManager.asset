@@ -7,6 +7,7 @@ TagManager:
   - Coin
   - coin
   - Feind
+  - Text
   layers:
   - Default
   - TransparentFX
