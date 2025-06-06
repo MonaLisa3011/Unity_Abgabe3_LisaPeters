@@ -14,6 +14,7 @@ public class Feind : MonoBehaviour
     [SerializeField] Button Nochmal2Button;
     
     [SerializeField] Button StartButton;
+
     
     private void Start()
     {
@@ -37,8 +38,9 @@ public class Feind : MonoBehaviour
     {
         StartPanel.SetActive(false);
     }
+
     void Update()
-    {}
+    { }
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other.gameObject.name);
