@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 61169968}
   - component: {fileID: 61169970}
   - component: {fileID: 61169969}
+  - component: {fileID: 61169971}
   m_Layer: 0
   m_Name: Feind1 (2)
   m_TagString: Feind
@@ -253,6 +254,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &61169971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61169967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cbebb47278aa44b8800d045d3c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &64560098
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +805,7 @@ GameObject:
   - component: {fileID: 517795608}
   - component: {fileID: 517795609}
   - component: {fileID: 517795610}
+  - component: {fileID: 517795611}
   m_Layer: 0
   m_Name: Charakter
   m_TagString: Untagged
@@ -1063,6 +1077,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &517795611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517795604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ece34b5b5e3d24dbfeeccfd432228c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,6 +2210,7 @@ GameObject:
   - component: {fileID: 787857362}
   - component: {fileID: 787857361}
   - component: {fileID: 787857360}
+  - component: {fileID: 787857363}
   m_Layer: 0
   m_Name: Feind1
   m_TagString: Feind
@@ -2307,6 +2334,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1452020955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &787857363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787857359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cbebb47278aa44b8800d045d3c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &842272586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3433,7 @@ GameObject:
   - component: {fileID: 1104391172}
   - component: {fileID: 1104391174}
   - component: {fileID: 1104391173}
+  - component: {fileID: 1104391175}
   m_Layer: 0
   m_Name: Feind1 (1)
   m_TagString: Feind
@@ -3517,6 +3557,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1104391175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104391171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cbebb47278aa44b8800d045d3c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110494942
 GameObject:
   m_ObjectHideFlags: 0
