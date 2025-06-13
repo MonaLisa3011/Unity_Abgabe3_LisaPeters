@@ -30,6 +30,8 @@ public class CharacterControllerSide : MonoBehaviour
     // du kannst die Panels benutzen
     [SerializeField] GameObject VerlorenPanel;
     [SerializeField] GameObject GewonnenPanel;
+    
+    [SerializeField] TextMeshProUGUI timerText;
 
     // du kannst das TextMeshPro benutzen für den textCoinCount
     [SerializeField] private TextMeshProUGUI textCoinCount;
@@ -132,6 +134,7 @@ public class CharacterControllerSide : MonoBehaviour
             GewonnenPanel.SetActive(true);
             // wenn das Gewonnen Panel erscheint kann der Spieler sich nicht mehr bewegen 
             canMove = false;
+            Destroy(timerText.gameObject);
         }
     }
 }

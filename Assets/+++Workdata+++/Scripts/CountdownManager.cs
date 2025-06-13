@@ -7,13 +7,16 @@ public class CountdownManager : MonoBehaviour
      public bool gameStarted = false;
      public TextMeshProUGUI countdownText;
 
+     [SerializeField] private Timer timer;
+
+     [SerializeField] TextMeshProUGUI textTimer;
 
      void Start()
      {
-          StartCoroutine(Countdown());
+          
      }
 
-     private IEnumerator Countdown()
+     public IEnumerator Countdown()
      {
           countdownText.gameObject.SetActive(true);
 
@@ -31,6 +34,11 @@ public class CountdownManager : MonoBehaviour
           yield return new WaitForSeconds(1f);
           countdownText.gameObject.SetActive(false);
 
+        Debug.Log("hilfe");
+        
+        timer.StartTimer();
+
+          
           countdownIndex = 3;
      }
 

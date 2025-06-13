@@ -14,6 +14,7 @@ public class Feind : MonoBehaviour
     [SerializeField] Button Nochmal2Button;
     
     [SerializeField] Button StartButton;
+    [SerializeField] CountdownManager countdownManager;
 
     
     private void Start()
@@ -37,6 +38,8 @@ public class Feind : MonoBehaviour
     void StartGame()
     {
         StartPanel.SetActive(false);
+        StartCoroutine(countdownManager.Countdown());
+
     }
 
     void Update()

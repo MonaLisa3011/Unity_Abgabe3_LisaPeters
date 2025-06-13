@@ -952,6 +952,7 @@ MonoBehaviour:
     m_Bits: 8
   VerlorenPanel: {fileID: 845202069}
   GewonnenPanel: {fileID: 787658012}
+  timerText: {fileID: 569985285}
   textCoinCount: {fileID: 1197008355}
 --- !u!50 &517795609
 Rigidbody2D:
@@ -4123,6 +4124,7 @@ MonoBehaviour:
   StartPanel: {fileID: 1118830728}
   Nochmal2Button: {fileID: 564681029}
   StartButton: {fileID: 592882849}
+  countdownManager: {fileID: 2084185339}
 --- !u!114 &1247141137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5794,9 +5796,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1a74941d583a544b73f3c806e5eeb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownIndex: 7
+  countdownIndex: 3
   gameStarted: 0
   countdownText: {fileID: 1922932927}
+  timer: {fileID: 1247141138}
+  textTimer: {fileID: 569985285}
 --- !u!1 &2092333035
 GameObject:
   m_ObjectHideFlags: 0
